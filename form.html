@@ -1,0 +1,222 @@
+<!-- Center wrap the checkbox and radio button text -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Flexi form</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav class='cf'>
+            <!-- <div class="logo-menu">
+                <a href="#"><img src="/flexi-project/images/logo-flexi.png" alt="logo"></a>
+            </div> -->
+            <ul class='cf'>
+                <li class="hide-on-small">
+                    <a href='./index.html'>Flexiloans</a>
+                </li>
+                <li>
+                    <a href='./index.html#product'>Products</a>
+                </li>
+                <li>
+                    <a href='./index.html#client'>About</a>
+                </li>
+                <li>
+                    <a href='#register'>Register</a>
+                </li>
+                <li>
+                    <a href='#footer'>Contact</a>
+                </li>
+            </ul>
+            <a href='./index.html' id='openup'>Flexiloans</a>
+        </nav>
+    </header>
+    
+    <!-- Registeration form -->
+    <div id="register">
+        <form name="registration-form" action="#" onsubmit="return validateForm()" method="POST">
+            <h2> Registration form</h2>
+            <div class="row">
+                <div class="labels">
+                    <label for="name">Name: </label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="name" placeholder="Your name.." />
+                    <p id="err-name" class="on-error"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="email">Email: </label>
+                </div>
+                <div class="inputs">
+                    <input type="email" name="email" placeholder="personal email id.." />
+                    <p id="err-email" class="on-error"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="age">Age: </label>
+                </div>
+                <div class="inputs">
+                    <input type="number" name="age" placeholder="21" />
+                    <p id="err-age" class="on-error"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="dob">Date of birth:</label>
+                </div>
+                <div class="inputs">
+                    <input type="date" name="dob" />
+                    <p id="err-dob" class="on-error"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="gender">Gender: </label>
+                </div>
+                <div class="inputs">
+                    <input type="radio" name="gender" value="male" /> <span> Male </span>
+                    <input type="radio" name="gender" value="female" /> <span> Female</span>
+                    <p id="err-gender" class="on-error"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="nationality">Nationality: </label>
+                </div>
+                <div class="inputs">
+                    <select name="nationality">
+                        <option value="">Choose an option</option>
+                        <option value="indian">Indian</option>
+                        <option value="american">American</option>
+                        <option value="british">British</option>
+                        <option value="russian">Russian</option>
+                    </select>
+                    <p id="err-nationality" class="on-error"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="product">Select product service: </label>
+                </div>
+                <div class="inputs">
+                    <div>
+                        <input type="checkbox" name="product[]" value="working-capital-loan" /> <span>Working capital
+                            Loan</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="product[]" value="vendor-financing" /> <span>Vendor
+                            financing</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="product[]" value="line-of-credit" /> <span>Line of credit</span>
+                    </div>
+                    <p id="err-product" class="on-error"></p>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-cols">
+                <ul>
+                    <li>About Flexiloans</li>
+                    <li>
+                        <a href="#">Newsroom</a>
+                    </li>
+                    <li>
+                        <a href="#">Leadership</a>
+                    </li>
+                    <li>
+                        <a href="#">Investors</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>Recent posts</li>
+                    <li>
+                        <a href="#">Lending market</a>
+                    </li>
+                    <li>
+                        <a href="#">Startups</a>
+                    </li>
+                    <li>
+                        <a href="#">Shows</a>
+                    </li>
+                    <li>
+                        <a href="#">Apps</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>Offices</li>
+                    <li>
+                        <a href="#">Mumbai</a>
+                    </li>
+                    <li>
+                        <a href="#">Delhi</a>
+                    </li>
+                    <li>
+                        <a href="#">Banglore</a>
+                    </li>
+                    <li>
+                        <a href="#">Chennai</a>
+                    </li>
+                    <li>
+                        <a href="#">Hyderabad</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>Education & Business</li>
+                    <li>
+                        <a href="#">Epimoney & Education</a>
+                    </li>
+                    <li>
+                        <a href="#">Epimoney For College</a>
+                    </li>
+                    <li>
+                        <a href="#">Flexi & Business</a>
+                    </li>
+                    <li>
+                        <a href="#">Loan For Business</a>
+                    </li>
+                    <li>
+                        <a href="#">Jobs</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            Copyright &copy; 2019 Flexiloans
+        </div>
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+
+</html>
